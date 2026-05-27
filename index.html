@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="FC.png">
+<img
+    src="CF.png"
+    class="logo">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="title">
+    FocusCore
+</div>
+
+        <button onclick="toggleDarkMode()" class="dark-btn">
+            Dark Mode
+        </button>
+        
+
+</div>
+        <div class="dashboard">
+            <div class="card">
+
+    <h2>Study Music</h2>
+
+    <p>
+        Open your Spotify study playlist 🎵
+    </p>
+
+    <a
+        href="https://open.spotify.com"
+        target="_blank">
+
+        <button>
+            Open Spotify
+        </button>
+
+    </a>
+<div class="card">
+
+    <h2>
+        Today
+    </h2>
+
+    <p id="dayText"></p>
+
+    <p id="dateText"></p>
+
+</div>
+<div class="card">
+
+    <h2>
+        Study Stats
+    </h2>
+
+    <p>
+        No. of hours studied:
+    </p>
+
+    <p id="studyHours">
+        0 hrs
+    </p>
+
+</div>
+</div>
+
+        <div class="card">
+
+        
+
+    <h2>Pomodoro Timer</h2>
+
+    <div class="modes">
+
+        <button onclick="setMode(25,5)">
+            25-5
+        </button>
+
+        <button onclick="setMode(50,10)">
+            50-10
+        </button>
+
+        <button onclick="setMode(50,17)">
+            50-17
+        </button>
+        
+    </div>
+
+    <p id="modeText">
+        Study Session
+    </p>
+
+    <p id="timer">
+        25:00
+    </p>
+
+    <button onclick="startTimer()">
+        Start
+    </button>
+
+    <button onclick="pauseTimer()">
+        Pause
+    </button>
+
+    <button onclick="resetTimer()">
+        Reset
+    </button>
+    <button onclick="takeBreak()">
+    Take a Break
+</button>
+
+<br>
+
+<img
+    src="cassette.png"
+    class="pixel-img">
+
+</div>
+
+        <div class="card">
+            <h2>To-Do List</h2>
+
+            <input type="text" id="taskInput" placeholder="Enter a task">
+
+            <button onclick="addTask()">Add Task</button>
+
+            <ul id="taskList"></ul>
+        </div>
+
+        <div class="card">
+
+    <h2>
+        Daily Quote
+    </h2>
+
+    <p id="quoteText">
+        Loading quote...
+    </p>
+
+</div>
+
+        
+
+    </div>
+<audio id="alarmSound">
+
+    <source
+        src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg"
+        type="audio/ogg">
+
+</audio>
+    <script src="script.js"></script>
+<footer>
+    © 2026 FocusCore. All rights reserved.
+</footer>
+</body>
+
+</html>
